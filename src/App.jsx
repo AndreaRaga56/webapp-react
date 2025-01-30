@@ -5,16 +5,23 @@ import HomePage from './pages/HomePage.jsx'
 import MovieList from './pages/MovieList.jsx'
 import GlobalContext from './Contetx/GlobalContext.js'
 import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 
 function App() {
-
+  let [movies, setMovies]=useState([])
   const apiUrl = "http://localhost:3300/movies"
+ 
 
-  axios.get()
+  useEffect(()=>{
+    axios.get(`${apiUrl}`).then((resp) => {
+      console.log(resp.data.data)
+      setMovies(resp.data.data)
+    });
+  }, [])
 
   const GlobalProviderValue={
-    x:1
+    movies
   }
 
 
