@@ -4,8 +4,10 @@ import NavBar from "./NavBar";
 function AppLayout() {
     return (
         <>
-            <NavBar/>
-            <Outlet />
+            <NavBar />
+            <main className="container mt-4">
+                <Outlet />
+            </main>
             <footer></footer>
         </>
     )

@@ -1,6 +1,6 @@
 function HomePage(){
     return(
-        <>Ciao</>
+        <>Sei nella HomePage</>
     )
 }
 export default HomePage
