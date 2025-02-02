@@ -5,8 +5,10 @@ function AppLayout() {
     return (
         <>
             <NavBar />
-            <main className="container mt-4">
-                <Outlet />
+            <main >
+                <div className="container pt-4">
+                    <Outlet />
+                </div>
             </main>
             <footer></footer>
         </>

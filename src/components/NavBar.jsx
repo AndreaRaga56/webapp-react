@@ -28,7 +28,7 @@ function NavBar() {
                 NavLinks.map((curElem, i)=>{
                   return (
                   <li key={i} className="nav-item">
-                  <NavLink className="nav-link active" aria-current="page" to={curElem.path}>{curElem.name}</NavLink>
+                  <NavLink className="nav-link" aria-current="page" to={curElem.path}>{curElem.name}</NavLink>
                 </li>
                 )})
               }              

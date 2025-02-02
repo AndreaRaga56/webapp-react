@@ -1,6 +1,5 @@
 import { useContext } from "react"
 import GlobalContext from '../Contetx/GlobalContext'
-import { Link } from "react-router-dom"
 import MovieCard from "../components/MovieCard"
 
 function MovieList() {
