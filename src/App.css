@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .navbar-brand{
   color: black;
   font-size: 32px;
@@ -7,3 +14,30 @@
 .active{
   color: white;
 }
+
+.card-container{
+  display: flex;
+  gap: 2.64vw;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.my-card{
+  width: 25vw;
+  height: 15vw;
+  border-radius: 8px;
+  border: back 2px solid;
+  display: flex;
+  background-color: rgb(255, 239, 220);
+}
+
+.my-card img{
+  max-height: 100%;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.text{
+  padding: 15px;
+}
+
